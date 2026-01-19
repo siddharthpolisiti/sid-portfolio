@@ -47,7 +47,7 @@ const HeroSection = ({ onStartGame }: HeroSectionProps) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            SIDDHARTH
+            SID
             <br />
             POLISITI
           </motion.h1>
@@ -67,7 +67,7 @@ const HeroSection = ({ onStartGame }: HeroSectionProps) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            Scaling products from 0→1→N across fintech, AI, smart home, and enterprise SaaS
+            Building products from 0 → 1 → N across fintech, AI chatbots, developer platforms, smart home & hospitality IoT, warehouse systems, and experimentation-led growth
           </motion.p>
 
           <motion.div
