@@ -18,6 +18,7 @@ const worldColors: Record<number, string> = {
   6: "bg-cyan-500",
   7: "bg-accent",
   8: "bg-red-500",
+  9: "bg-orange-500",
 };
 
 const WorldCard = ({

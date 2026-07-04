@@ -5,7 +5,7 @@ import Coin from "./Coin";
 
 const ContactSection = () => {
   const handleEmailClick = () => {
-    window.location.href = "mailto:siddharth.polisiti@edu.em-lyon.com";
+    window.location.href = "mailto:siddharth.polisiti@gmail.com";
   };
 
   const handleLinkedInClick = () => {
@@ -73,7 +73,7 @@ const ContactSection = () => {
             </div>
             <div className="font-retro text-xl">
               <span className="text-muted-foreground">📧 Email:</span>{" "}
-              <span className="text-foreground">siddharth.polisiti@edu.em-lyon.com</span>
+              <span className="text-foreground">siddharth.polisiti@gmail.com</span>
             </div>
             <div className="font-retro text-xl">
               <span className="text-muted-foreground">📱 Phone:</span>{" "}
@@ -107,7 +107,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p>© 2024 SIDDHARTH POLISITI</p>
+          <p>© 2026 SIDDHARTH POLISITI</p>
           <p className="text-sm mt-2">MADE WITH ❤️ AND LOTS OF ☕</p>
         </motion.div>
       </div>

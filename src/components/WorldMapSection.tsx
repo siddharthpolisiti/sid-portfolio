@@ -11,42 +11,48 @@ const worlds = [
   },
   {
     worldNumber: 2,
-    title: "GROWTH PLATFORMS",
+    title: "AI DEVELOPER PLATFORM",
     subtitle: "N26 (BOSS LEVEL)",
-    icon: "🚀",
+    icon: "🧠",
   },
   {
     worldNumber: 3,
-    title: "SMART HOME",
+    title: "GROWTH & EXPERIMENTATION",
+    subtitle: "N26",
+    icon: "🚀",
+  },
+  {
+    worldNumber: 4,
+    title: "SMART HOME & HOSPITALITY",
     subtitle: "Octo Telematics",
     icon: "🏠",
   },
   {
-    worldNumber: 4,
+    worldNumber: 5,
     title: "AI CHATBOTS & KYC",
     subtitle: "Bank of America",
     icon: "🤖",
   },
   {
-    worldNumber: 5,
+    worldNumber: 6,
     title: "WAREHOUSE SYSTEMS",
     subtitle: "Prospecta Technologies",
     icon: "🏭",
   },
   {
-    worldNumber: 6,
-    title: "ENTERPRISE OPS",
+    worldNumber: 7,
+    title: "E-COMMERCE & TELECOM",
     subtitle: "CGI",
     icon: "💻",
   },
   {
-    worldNumber: 7,
+    worldNumber: 8,
     title: "EDUCATION",
     subtitle: "Engineering & MBA",
     icon: "🎓",
   },
   {
-    worldNumber: 8,
+    worldNumber: 9,
     title: "POWER-UPS",
     subtitle: "Passions & Skills",
     icon: "❤️",
@@ -107,7 +113,7 @@ const WorldMapSection = ({ onWorldSelect }: WorldMapSectionProps) => {
           viewport={{ once: true }}
         >
           <span className="font-pixel text-sm">WORLDS COMPLETED:</span>
-          {[...Array(8)].map((_, i) => (
+          {[...Array(9)].map((_, i) => (
             <span key={i} className="text-xl">⭐</span>
           ))}
         </motion.div>

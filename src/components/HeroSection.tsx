@@ -83,7 +83,7 @@ const HeroSection = ({ onStartGame }: HeroSectionProps) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            Building products from 0 → 1 → N across fintech, AI chatbots, developer platforms, smart home & hospitality IoT, warehouse systems, and experimentation-led growth
+            Building products from 0 → 1 → N across AI developer platforms, agentic workflows, fintech, consumer apps, IoT, and experimentation-led growth
           </motion.p>
 
           <motion.div

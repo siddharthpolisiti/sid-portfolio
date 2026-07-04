@@ -29,6 +29,7 @@ const worldBgColors: Record<number, string> = {
   6: "from-cyan-500/20 to-cyan-500/5",
   7: "from-accent/20 to-accent/5",
   8: "from-red-500/20 to-red-500/5",
+  9: "from-orange-500/20 to-orange-500/5",
 };
 
 const worldBorderColors: Record<number, string> = {
@@ -40,6 +41,7 @@ const worldBorderColors: Record<number, string> = {
   6: "border-cyan-500",
   7: "border-accent",
   8: "border-red-500",
+  9: "border-orange-500",
 };
 
 const CaseStudySection = ({
