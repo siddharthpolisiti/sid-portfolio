@@ -70,6 +70,15 @@ The biggest founder lesson was to choose leverage over novelty. The fastest path
 
 I share all of this because these tools genuinely helped me build faster. I am not getting paid by any of these companies. I am just documenting what worked for me as I go, and I will keep sharing what I learn.
 
+## Yuki architecture (open reference for solo founders)
+
+If you want to see how this stack fits together in practice, I open-sourced a high-level architecture overview of Yuki — how I structure Supabase Edge Functions, Postgres with RLS, Google SSO auth, and agentic background workflows, without exposing any proprietary code.
+
+- Architecture overview: [github.com/siddharthpolisiti/yuki-architecture](https://github.com/siddharthpolisiti/yuki-architecture)
+- Product docs: [docs.yukihq.com](https://docs.yukihq.com)
+
+The intent is simple: share the real tech landscape a solo founder can use to ship fast on a small budget.
+
 ## Let's connect
 
 - [LinkedIn](https://www.linkedin.com/in/siddharthpolisiti/)
