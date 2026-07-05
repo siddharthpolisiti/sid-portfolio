@@ -55,6 +55,8 @@ const HeroSection = ({ onStartGame }: HeroSectionProps) => {
             <span className="text-2xl">⭐</span>
             <span className="text-2xl">⭐</span>
             <span className="text-2xl">⭐</span>
+            <span className="text-2xl">⭐</span>
+            <span className="text-2xl">⭐</span>
           </motion.div>
 
           <motion.h1
