@@ -8,7 +8,7 @@ I'm a Product Manager and solo founder with 9+ years of experience building cons
 
 I am the founder of [Yuki](https://yukihq.com/), an AI personal assistant designed to eliminate digital chores. It automatically organizes your email, calendar, travel, expenses, subscriptions, and reminders.
 
-We launched recently and scaled to 3,000 active users in our first two months, and the app has now passed 10,000 downloads. It's built to be a push-first intelligence engine that anticipates what you need before you have to ask.
+We launched recently and the app has passed 10,000 downloads. It's built to be a push-first intelligence engine that anticipates what you need before you have to ask.
 
 ## Solo Entrepreneur 0 to 1: How I Develop Apps Faster
 
