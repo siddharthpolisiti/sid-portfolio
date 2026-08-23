@@ -85,7 +85,7 @@ const HeroSection = ({ onStartGame }: HeroSectionProps) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
-            Building products from 0 → 1 → N across AI developer platforms, agentic workflows, fintech, consumer apps, IoT, and experimentation-led growth
+            Product leader and founder with 9+ years across full-stack engineering, high-growth consumer product management, internal AI developer platforms, AI chatbots, and experimentation-led growth
           </motion.p>
 
           <motion.div

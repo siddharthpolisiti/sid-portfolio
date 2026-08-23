@@ -5,19 +5,19 @@ import PixelCloud from "./PixelCloud";
 const worlds = [
   {
     worldNumber: 1,
-    title: "VENTURE: YUKI",
+    title: "YUKI - AI DIGITAL ASSISTANT",
     subtitle: "yukihq.com",
     icon: "🌟",
   },
   {
     worldNumber: 2,
     title: "AI DEVELOPER PLATFORM",
-    subtitle: "N26 (BOSS LEVEL)",
+    subtitle: "N26",
     icon: "🧠",
   },
   {
     worldNumber: 3,
-    title: "GROWTH & EXPERIMENTATION",
+    title: "GROWTH & ENGAGE",
     subtitle: "N26",
     icon: "🚀",
   },
