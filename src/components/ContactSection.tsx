@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import PixelButton from "./PixelButton";
 import QuestionBlock from "./QuestionBlock";
 import Coin from "./Coin";
+import PixelCoffee from "./PixelCoffee";
 
 const EMAIL = "siddharth.polisiti@gmail.com";
 const PHONE = "+34-613040108";
@@ -134,7 +135,10 @@ const ContactSection = () => {
           viewport={{ once: true }}
         >
           <p>© 2026 SIDDHARTH POLISITI</p>
-          <p className="text-sm mt-2">MADE WITH ❤️ AND LOTS OF ☕</p>
+          <p className="text-sm mt-2 flex items-center justify-center gap-1.5">
+            <span>MADE WITH ❤️ AND LOTS OF</span>
+            <PixelCoffee />
+          </p>
         </motion.div>
       </div>
     </section>
