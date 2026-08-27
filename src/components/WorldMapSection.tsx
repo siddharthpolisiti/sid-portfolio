@@ -1,63 +1,17 @@
 import { motion } from "framer-motion";
 import WorldCard from "./WorldCard";
 import PixelCloud from "./PixelCloud";
+import { caseStudies } from "@/data/caseStudies";
 
-const worlds = [
-  {
-    worldNumber: 1,
-    title: "YUKI - AI DIGITAL ASSISTANT",
-    subtitle: "yukihq.com",
-    icon: "🌟",
-  },
-  {
-    worldNumber: 2,
-    title: "AI DEVELOPER PLATFORM",
-    subtitle: "N26",
-    icon: "🧠",
-  },
-  {
-    worldNumber: 3,
-    title: "GROWTH & ENGAGE",
-    subtitle: "N26",
-    icon: "🚀",
-  },
-  {
-    worldNumber: 4,
-    title: "SMART HOME & HOSPITALITY",
-    subtitle: "Octo Telematics",
-    icon: "🏠",
-  },
-  {
-    worldNumber: 5,
-    title: "AI CHATBOTS & KYC",
-    subtitle: "Bank of America",
-    icon: "🤖",
-  },
-  {
-    worldNumber: 6,
-    title: "WAREHOUSE SYSTEMS",
-    subtitle: "Prospecta Technologies",
-    icon: "🏭",
-  },
-  {
-    worldNumber: 7,
-    title: "E-COMMERCE & TELECOM",
-    subtitle: "CGI",
-    icon: "💻",
-  },
-  {
-    worldNumber: 8,
-    title: "EDUCATION",
-    subtitle: "Engineering & MBA",
-    icon: "🎓",
-  },
-  {
-    worldNumber: 9,
-    title: "POWER-UPS",
-    subtitle: "Passions & Skills",
-    icon: "❤️",
-  },
-];
+// Derived from the single source of truth in caseStudies.ts so map labels can
+// never drift from the case studies they link to. `mapTitle`/`mapSubtitle` are
+// optional short-form overrides for the smaller card.
+const worlds = caseStudies.map(({ worldNumber, title, mapTitle, company, mapSubtitle, icon }) => ({
+  worldNumber,
+  title: mapTitle ?? title,
+  subtitle: mapSubtitle ?? company,
+  icon,
+}));
 
 interface WorldMapSectionProps {
   onWorldSelect: (worldNumber: number) => void;

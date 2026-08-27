@@ -1,34 +1,53 @@
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import PixelButton from "./PixelButton";
 import QuestionBlock from "./QuestionBlock";
 import Coin from "./Coin";
 
+const EMAIL = "siddharth.polisiti@gmail.com";
+const PHONE = "+34-613040108";
+const LINKEDIN = "https://www.linkedin.com/in/siddharthpolisiti/";
+const RESUME = "/resume.pdf";
+
 const ContactSection = () => {
+  // Generated once — regenerating on every render made the stars jump around.
+  const stars = useMemo(
+    () =>
+      [...Array(20)].map(() => ({
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`,
+        duration: 1 + Math.random() * 2,
+        delay: Math.random() * 2,
+      })),
+    []
+  );
+
   const handleEmailClick = () => {
-    window.location.href = "mailto:siddharth.polisiti@gmail.com";
+    window.location.href = `mailto:${EMAIL}`;
   };
 
   const handleLinkedInClick = () => {
-    window.open("https://www.linkedin.com/in/siddharthpolisiti/", "_blank");
+    window.open(LINKEDIN, "_blank", "noopener,noreferrer");
+  };
+
+  const handleResumeClick = () => {
+    window.open(RESUME, "_blank", "noopener,noreferrer");
   };
 
   return (
     <section className="relative py-20 px-4 bg-foreground min-h-[60vh]">
       {/* Stars background */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
+        {stars.map((star, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-accent rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
+            style={{ left: star.left, top: star.top }}
             animate={{ opacity: [0.3, 1, 0.3] }}
             transition={{
-              duration: 1 + Math.random() * 2,
+              duration: star.duration,
               repeat: Infinity,
-              delay: Math.random() * 2,
+              delay: star.delay,
             }}
           />
         ))}
@@ -73,11 +92,15 @@ const ContactSection = () => {
             </div>
             <div className="font-retro text-xl">
               <span className="text-muted-foreground">📧 Email:</span>{" "}
-              <span className="text-foreground">siddharth.polisiti@gmail.com</span>
+              <a href={`mailto:${EMAIL}`} className="text-foreground underline underline-offset-4 hover:text-primary">
+                {EMAIL}
+              </a>
             </div>
             <div className="font-retro text-xl">
               <span className="text-muted-foreground">📱 Phone:</span>{" "}
-              <span className="text-foreground">+34-613040108</span>
+              <a href={`tel:${PHONE.replace(/-/g, "")}`} className="text-foreground underline underline-offset-4 hover:text-primary">
+                {PHONE}
+              </a>
             </div>
           </div>
 
@@ -87,6 +110,9 @@ const ContactSection = () => {
             </PixelButton>
             <PixelButton onClick={handleLinkedInClick} variant="accent" size="lg">
               LINKEDIN
+            </PixelButton>
+            <PixelButton onClick={handleResumeClick} variant="primary" size="lg">
+              RESUME
             </PixelButton>
           </div>
 

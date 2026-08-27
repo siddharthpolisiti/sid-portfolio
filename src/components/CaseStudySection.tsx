@@ -44,6 +44,14 @@ const worldBorderColors: Record<number, string> = {
   9: "border-orange-500",
 };
 
+// Full class strings kept literal so Tailwind's content scanner picks them up.
+const impactCols: Record<number, string> = {
+  1: "md:grid-cols-1",
+  2: "md:grid-cols-2",
+  3: "md:grid-cols-3",
+  4: "md:grid-cols-4",
+};
+
 const CaseStudySection = ({
   worldNumber,
   title,
@@ -178,7 +186,7 @@ const CaseStudySection = ({
             <h4 className="font-pixel text-xs mb-4 flex items-center gap-2">
               <span className="text-xl">🏆</span> IMPACT
             </h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className={`grid grid-cols-2 ${impactCols[impact.length] ?? "md:grid-cols-4"} gap-4`}>
               {impact.map((item, i) => (
                 <motion.div
                   key={i}

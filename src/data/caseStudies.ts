@@ -26,27 +26,28 @@ export const caseStudies = [
       "Prioritized rapid MVP delivery while keeping infrastructure costs low",
     ],
     impact: [
+      { metric: "Downloads", value: "10K+" },
       { metric: "Active Users", value: "3,000+" },
-      { metric: "Time to Scale", value: "2 Months" },
-      { metric: "Backend", value: "Supabase" },
-      { metric: "Build", value: "Solo, Full-stack" },
+      { metric: "Activation Rate", value: "30%" },
+      { metric: "Time to Scale", value: "2 Mo" },
     ],
     learning:
       "Building 0→1 as a solo founder teaches you that conviction without validation is just opinion. Ship fast, listen harder.",
   },
   {
     worldNumber: 2,
+    mapTitle: "AI DEVELOPER PLATFORM",
     title: "AI DEVELOPER PLATFORM & PRODUCTIVITY",
     company: "N26",
     role: "Lead Product Manager",
     icon: "🧠",
     context:
-      "Led the 0-to-1 launch of N26's internal AI Developer Platform, integrating Claude and GitHub Copilot to improve AI scalability and quality across engineering workflows.",
+      "Led the 0-to-1 launch of N26's internal AI Developer Platform, putting Claude and GitHub Copilot into the daily engineering workflow of a regulated bank — with the guardrails that made AI output trusted for production code.",
     problem: [
-      "Idea-to-production cycles were slow (~20 days)",
-      "AI tooling was fragmented and not yet trusted for real engineering work",
-      "No safe, governed way to expose internal APIs to coding agents",
-      "Debugging and operational support consumed large amounts of engineering time",
+      "Dev epic cycle times ran ~17 days from idea to production",
+      "AI tooling was fragmented and untrusted for real production work — and there was no governed way to give coding agents access to internal APIs",
+      "AI assistance sat at the edges of the workflow rather than in the critical path to shipping",
+      "AI leverage stayed locked inside engineering, leaving Product and UX without it",
     ],
     roleScope: [
       "Led the AI Developer Platform and Developer Productivity initiative",
@@ -55,16 +56,16 @@ export const caseStudies = [
       "Defined guardrails for agentic workflows and internal API access",
     ],
     whatBuilt: [
-      "Launched the internal AI Developer Platform",
-      "Integrated Claude and GitHub Copilot into engineering workflows",
-      "Created the foundation for AI-driven developer productivity at scale",
-      "Helped engineers write, test, and ship code with AI assistance",
+      "A governed access layer that lets coding agents call internal APIs safely, with scoped permissions and audit trails",
+      "Claude and GitHub Copilot embedded where engineers already work — IDE, code review, and debugging — not as standalone tools",
+      "The guardrails and evaluation criteria that made AI-generated code trusted to merge inside a regulated bank",
+      "The adoption and measurement loop that moved AI from pilot to default tooling across engineering teams",
     ],
     impact: [
-      { metric: "Impact", value: "Faster engineering workflows" },
-      { metric: "AI Stack", value: "Claude + Copilot" },
-      { metric: "Scope", value: "Internal platform" },
-      { metric: "Launch", value: "0→1" },
+      { metric: "Epic Cycle Time", value: "17d→8d" },
+      { metric: "Eng Adoption", value: "100%" },
+      { metric: "AI-Assisted PRs", value: "50%+" },
+      { metric: "Product & UX", value: "50%" },
     ],
     learning:
       "AI only compounds when the platform is trusted. Governance and developer experience are the product, not an afterthought.",
@@ -78,10 +79,10 @@ export const caseStudies = [
     context:
       "Led experimentation and growth for N26's Growth & Engage group, running the experimentation platform and driving improvements across onboarding, sign-up, sign-in, home engagement, and feature adoption.",
     problem: [
-      "Growth depended on a strong experimentation platform",
+      "Experiment velocity was the ceiling on growth — teams could not test fast enough to learn",
       "Onboarding, sign-up, and sign-in funnels carried avoidable friction",
-      "Feature discoverability and home engagement needed improvement",
-      "Growth decisions needed clearer signals from experiments",
+      "Features shipped but went undiscovered — home surfaces did not put them in front of users",
+      "Growth calls were made on opinion because experiment signals were slow and unclear",
     ],
     roleScope: [
       "Lead PM for the Growth & Engage group",
@@ -90,16 +91,14 @@ export const caseStudies = [
       "Partnered with Engineering, Data, UX, and Product Marketing",
     ],
     whatBuilt: [
-      "Experimentation platform for Growth & Engage",
-      "Experimentation-led improvements across onboarding and activation",
-      "Home engagement work to improve feature discoverability and adoption",
-      "Self-serve analytics and dashboards for growth teams",
+      "The experimentation platform that let growth squads run 60 controlled experiments a month",
+      "Reworked sign-up and sign-in funnels, removing friction step by step under continuous A/B tests",
+      "Home surfaces that put the right feature in front of the right user, lifting discovery and adoption",
+      "Self-serve analytics and dashboards so growth squads could read results without waiting on the data team",
     ],
     impact: [
-      { metric: "Impact", value: "Experimentation platform" },
-      { metric: "Focus", value: "Funnels + engagement" },
-      { metric: "Outcome", value: "Behavior change" },
-      { metric: "Scope", value: "Growth & Engage" },
+      { metric: "Avg Conversion Lift", value: "+20%" },
+      { metric: "Experiments / Month", value: "60" },
     ],
     learning:
       "Product-led growth compounds. Discoverability plus fast experimentation moves more users than any single feature.",
@@ -133,13 +132,14 @@ export const caseStudies = [
       { metric: "Revenue", value: "$12M" },
       { metric: "% of Total", value: "~15%" },
       { metric: "DAU Growth", value: "+20%" },
-      { metric: "PMF", value: "Achieved" },
+      { metric: "Verticals", value: "2" },
     ],
     learning:
       "Hardware multiplies complexity. Without tight discovery loops, execution speed collapses.",
   },
   {
     worldNumber: 5,
+    mapTitle: "AI CHATBOTS & KYC",
     title: "AI CHATBOTS, KYC & AML",
     company: "Bank of America",
     role: "Product Developer (Erica)",
@@ -167,13 +167,14 @@ export const caseStudies = [
       { metric: "CS Deflection", value: "20%+" },
       { metric: "Beta Sign-ups", value: "1M+" },
       { metric: "Customers", value: "40M+" },
-      { metric: "Ops Costs", value: "Linear" },
+      { metric: "Ops Cost Growth", value: "Linear" },
     ],
     learning:
       "In regulated environments, trust is the growth lever. AI only works when UX, compliance, and incentives align.",
   },
   {
     worldNumber: 6,
+    mapTitle: "WAREHOUSE SYSTEMS",
     title: "WAREHOUSE MANAGEMENT SYSTEMS",
     company: "Prospecta Technologies",
     role: "Product Lead",
@@ -201,8 +202,7 @@ export const caseStudies = [
     impact: [
       { metric: "ARR Growth", value: "$250K→$5M" },
       { metric: "Team Scale", value: "15→50" },
-      { metric: "New Market", value: "SMB SaaS" },
-      { metric: "Product", value: "Configurable" },
+      { metric: "ARR Multiple", value: "20x" },
     ],
     learning:
       "Systems thinking matters before growth tactics. If the product isn't modular, growth is expensive.",
@@ -235,15 +235,16 @@ export const caseStudies = [
     ],
     impact: [
       { metric: "MAU Supported", value: "~8M" },
-      { metric: "Partners", value: "Best Buy, Walmart" },
-      { metric: "Role", value: "Team Lead" },
-      { metric: "Domain", value: "E-commerce" },
+      { metric: "Retail Partners", value: "2 National" },
+      { metric: "Core Flows Owned", value: "3" },
     ],
     learning:
       "Engineering at scale taught me that reliability is a feature — millions of users feel every edge case.",
   },
   {
     worldNumber: 8,
+    mapTitle: "EDUCATION",
+    mapSubtitle: "Engineering & MBA",
     title: "EDUCATION & FOUNDATIONS",
     company: "Engineering & Business",
     role: "Academic Journey",
@@ -277,6 +278,8 @@ export const caseStudies = [
   },
   {
     worldNumber: 9,
+    mapTitle: "POWER-UPS",
+    mapSubtitle: "Passions & Skills",
     title: "PASSIONS & POWER-UPS",
     company: "Life Beyond Work",
     role: "Interests & Hobbies",
