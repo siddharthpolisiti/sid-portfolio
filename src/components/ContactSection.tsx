@@ -4,6 +4,7 @@ import PixelButton from "./PixelButton";
 import QuestionBlock from "./QuestionBlock";
 import Coin from "./Coin";
 import PixelCoffee from "./PixelCoffee";
+import PixelHeart from "./PixelHeart";
 
 const EMAIL = "siddharth.polisiti@gmail.com";
 const PHONE = "+34-613040108";
@@ -134,9 +135,16 @@ const ContactSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p>© 2026 SIDDHARTH POLISITI</p>
-          <p className="text-sm mt-2 flex items-center justify-center gap-1.5">
-            <span>MADE WITH ❤️ AND LOTS OF</span>
+          {/* Both lines at text-3xl: VT323 is a condensed pixel face, so at
+              the previous text-sm the 44px icons dwarfed the words. 30px is
+              where the glyphs and the icons carry equal weight — 24px still
+              reads as icons-with-a-caption, 36px tips the other way. The
+              copyright line matches so the footer stays one block. */}
+          <p className="text-3xl">© 2026 SIDDHARTH POLISITI</p>
+          <p className="text-3xl mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+            <span>MADE WITH</span>
+            <PixelHeart />
+            <span>AND LOTS OF</span>
             <PixelCoffee />
           </p>
         </motion.div>
